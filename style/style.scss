@@ -1,0 +1,74 @@
+
+
+
+
+@mixin flex-manager($direction, $justify, $align) {
+display: flex;
+flex-direction: $direction;
+justify-content: $justify;
+align-items: $align;
+}
+
+* {
+    box-sizing: border-box;
+} 
+
+html {
+    scroll-behavior: smooth;
+    body {
+        .nav-and-background {
+            width: 100%;
+            height: 500px;
+            // background-image: url(../assets/images/hoorCafe-yard-2.jfif);
+            background-image: url(../assets/images/hoorCafe-yard-1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            .navbar {
+                @include flex-manager(row, space-between, center);
+                span {
+                    color: white;
+                    font-size: 30px;
+                }
+            }
+        }
+        .footer {
+            width: 100%;
+            height: 500px;
+            background-color: white;
+            position: relative;
+            bottom: 100px;
+            // z-index: 1;
+            border-radius: 60px;
+            .cafe-name-and-logo {
+                @include flex-manager(column, center, center);
+                position: relative;
+                bottom: 40px;
+                a {
+                    img {
+                        width: 100px;
+                        height: auto;
+                    }
+                }
+            }
+            .cafe-options {
+                // @include flex-manager(column, space-between, flex-start);
+                direction: rtl;
+                a {
+                    // @include flex-manager(row, space-between, center);
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    padding: 2%;
+                    i {
+                        @include flex-manager(row, center, center);
+                        margin-right: 100%;
+                    }
+                }
+                .menu-visit-link {
+                    border-bottom: solid 1px black;
+                }
+            }
+        }
+    }
+}
