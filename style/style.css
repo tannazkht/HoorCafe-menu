@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "IranSans";
+  src: url("../assets/font/Fonts/irsans_p30download.com.ttf") format(".ttf");
+}
+@font-face {
+  font-family: "vazirfont";
+  src: url("../assets/font/vazir-font-v16.1.0/Vazir-Bold.woff") format("woff");
+}
 * {
   box-sizing: border-box;
+  font-family: IranSans, vazirfont;
 }
 
 html {
