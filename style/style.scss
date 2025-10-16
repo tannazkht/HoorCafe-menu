@@ -62,10 +62,9 @@ html {
         }
         .header-menuitems {
             background-color: #7BA05B;
-            // position: sticky;
-                position: fixed;
+                position:sticky;
                 top: 0px;
-                z-index: 2;
+                z-index: 1;
             .navbar {
                 @include flex-manager(row, space-between, center);
                 span {
@@ -153,17 +152,15 @@ html {
             }
             .items-card {
                 direction: rtl;
-                position: relative;
-                top: 300px;
                 h5 {
                     text-align: center;
                     padding: 15px;
                     background-color: #7BA05B;
                     border: 1px solid #7BA05B;
                     border-radius: 20px;;
+                    margin-top: 7px;
                 }
                 .card {
-                    // @include flex-manager(row, center, center);
                     border-radius: 20px;
                     .product-image {
                         img {
@@ -176,6 +173,11 @@ html {
                     .card-body {
                         .price {
                             color: #FF7538;
+                        }
+                        p {
+                            font-size: 15px;
+                            color: gray;
+                            text-align: justify;
                         }
                     }
                 }
@@ -240,6 +242,11 @@ html {
                     border-bottom: solid 1px lightgray;
                 }
             }
+        }
+        #change-language-modal {
+            // @include flex-manager(row, center, center);
+            // width: 50%;
+            // height: 200px;
         }
     }
 }

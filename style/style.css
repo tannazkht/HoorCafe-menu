@@ -55,9 +55,9 @@ html body .nav-and-background .navbar #signup-login-icon {
 }
 html body .header-menuitems {
   background-color: #7BA05B;
-  position: fixed;
+  position: sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 1;
 }
 html body .header-menuitems .navbar {
   display: flex;
@@ -147,8 +147,6 @@ html body .header-menuitems .cafe-menu-items ul li {
 }
 html body .items-card {
   direction: rtl;
-  position: relative;
-  top: 300px;
 }
 html body .items-card h5 {
   text-align: center;
@@ -156,6 +154,7 @@ html body .items-card h5 {
   background-color: #7BA05B;
   border: 1px solid #7BA05B;
   border-radius: 20px;
+  margin-top: 7px;
 }
 html body .items-card .card {
   border-radius: 20px;
@@ -172,6 +171,11 @@ html body .items-card .card .item-description-and-image {
 }
 html body .items-card .card .item-description-and-image .card-body .price {
   color: #FF7538;
+}
+html body .items-card .card .item-description-and-image .card-body p {
+  font-size: 15px;
+  color: gray;
+  text-align: justify;
 }
 html body .items-card .card .add-to-notebook-list-button {
   display: flex;
