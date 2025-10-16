@@ -31,54 +31,52 @@ html {
         .nav-and-background {
             width: 100%;
             height: 500px;
-            // background-image: url(../assets/images/hoorCafe-yard-2.jfif);
-            // background-image: url(../assets/images/hoorCafe-yard-1.webp);
-            background-color: rgb(8, 104, 59);
+            background-color: #4F7942;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             video {
-                z-index: -1;
+                position: relative;
+                bottom: 20px;
             }
             .navbar {
                 @include flex-manager(row, space-between, center);
-                z-index: 1;
                 position: relative;
-                bottom: 610px;
+                bottom: 600px;
                 span {
                     color: white;
                     font-size: 20px;
                     margin-top: 2%;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
                 }
                 #change-language-icon {
-                    margin-left: 3%;
+                    margin-left: 5%;
                 }
                 #signup-login-icon {
-                    margin-right: 3%;
+                    margin-right: 5%;
                 }
             }
         }
         .header-menuitems {
-            // background-color: rgb(8, 94, 8);
-            background-color: rgb(104, 103, 103);
+            background-color: #7BA05B;
             .navbar {
                 @include flex-manager(row, space-between, center);
                 span {
-                    color: white;
+                    color: black;
                     font-size: 20px;
                     margin-top: 2%;
                 }
-                #change-language-icon {
+                #notebook-icon {
                     margin-left: 3%;
                 }
-                // .cafe-name {
-                //     @include flex-manager(column, center, center);
-                // }
                 #back-to-previous-page-icon {
                     margin-right: 3%;
                     a {
                         i {
-                            color: white;
+                            color: black;
                         }
                     }
                 }
@@ -86,31 +84,33 @@ html {
             .cafe-logo-img {
                 @include flex-manager(row, center, center);
                 margin-top: 1%;
+                position: relative;
+                bottom: 10px;
                 a {
                     img {
                         border-radius: 100%;
-                        width: 100px;
+                        width: 70px;
                         height: auto;
                     }
                 }
             }
             .cafe-menu-items {
+                margin-top: 15px;
                 ul {
-                    // @include flex-manager(row, center, center);
                     li {
                     @include flex-manager(row, center, center);
                         a {
                             @include flex-manager(row, center, center);
                             color: white;
                             text-decoration: none;
-                            border: 1px solid white;
+                            border: 1px solid lightgrey;
                             border-radius: 30px;
                             padding: 8px;
                             width: 105px;
                             height: 40px;
                         }
                         a:hover {
-                            background-color: black;
+                            background-color: #355E3B;
                             color: white;
                         }
                     }
@@ -130,6 +130,7 @@ html {
                     height: 40px;
                     border-radius: 15px;
                     direction: rtl;
+                    border: none;
                 }
             }
             .cafe-menu-items {
@@ -142,18 +143,57 @@ html {
                     li {
                         padding: 0 2%;
                         color: white;
-                        // width: 100px;
                     }
                 }
             }
             }
-        // }
+            .items-card {
+                direction: rtl;
+                .card {
+                    // @include flex-manager(row, center, center);
+                    border-radius: 20px;
+                    .product-image {
+                        img {
+                            width: 200px;
+                            height: auto;
+                        }
+                    }
+                .item-description-and-image {
+                    @include flex-manager(row, center, center);
+                    .card-body {
+                        .price {
+                            color: #FF7538;
+                        }
+                    }
+                }
+                .add-to-notebook-list-button {
+                    @include flex-manager(row, center, center);
+                    margin-bottom: 10px;
+                    a {
+                        background-color: #355E3B;
+                        border: none;
+                    }
+                }
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
         .footer {
             width: 100%;
             // height: 500px;
             background-color: white;
             position: relative;
-            bottom: 100px;
+            bottom: 150px;
             // z-index: 1;
             border-radius: 60px;
             .cafe-name-and-logo {
@@ -169,22 +209,22 @@ html {
                 }
             }
             .cafe-options {
-                // @include flex-manager(column, space-between, flex-start);
+                @include flex-manager(column, center, unset);
                 direction: rtl;
                 a {
-                    // @include flex-manager(row, space-between, center);
+                    @include flex-manager(row, center, center);
                     display: block;
                     text-decoration: none;
                     color: black;
                     padding: 2%;
                     .bi-arrow-left {
                         @include flex-manager(row, center, center);
-                        margin-right: 100%;
+                        margin-right: 90%;
                         // margin-left: 5px;
                     }
                 }
                 .menu-visit-link {
-                    border-bottom: solid 1px black;
+                    border-bottom: solid 1px lightgray;
                 }
             }
         }

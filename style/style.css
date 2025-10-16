@@ -21,36 +21,40 @@ html body {
 html body .nav-and-background {
   width: 100%;
   height: 500px;
-  background-color: rgb(8, 104, 59);
+  background-color: #4F7942;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 html body .nav-and-background video {
-  z-index: -1;
+  position: relative;
+  bottom: 20px;
 }
 html body .nav-and-background .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
   position: relative;
-  bottom: 610px;
+  bottom: 600px;
 }
 html body .nav-and-background .navbar span {
   color: white;
   font-size: 20px;
   margin-top: 2%;
 }
+html body .nav-and-background .navbar span a {
+  text-decoration: none;
+  color: white;
+}
 html body .nav-and-background .navbar #change-language-icon {
-  margin-left: 3%;
+  margin-left: 5%;
 }
 html body .nav-and-background .navbar #signup-login-icon {
-  margin-right: 3%;
+  margin-right: 5%;
 }
 html body .header-menuitems {
-  background-color: rgb(104, 103, 103);
+  background-color: #7BA05B;
 }
 html body .header-menuitems .navbar {
   display: flex;
@@ -59,18 +63,18 @@ html body .header-menuitems .navbar {
   align-items: center;
 }
 html body .header-menuitems .navbar span {
-  color: white;
+  color: black;
   font-size: 20px;
   margin-top: 2%;
 }
-html body .header-menuitems .navbar #change-language-icon {
+html body .header-menuitems .navbar #notebook-icon {
   margin-left: 3%;
 }
 html body .header-menuitems .navbar #back-to-previous-page-icon {
   margin-right: 3%;
 }
 html body .header-menuitems .navbar #back-to-previous-page-icon a i {
-  color: white;
+  color: black;
 }
 html body .header-menuitems .cafe-logo-img {
   display: flex;
@@ -78,11 +82,16 @@ html body .header-menuitems .cafe-logo-img {
   justify-content: center;
   align-items: center;
   margin-top: 1%;
+  position: relative;
+  bottom: 10px;
 }
 html body .header-menuitems .cafe-logo-img a img {
   border-radius: 100%;
-  width: 100px;
+  width: 70px;
   height: auto;
+}
+html body .header-menuitems .cafe-menu-items {
+  margin-top: 15px;
 }
 html body .header-menuitems .cafe-menu-items ul li {
   display: flex;
@@ -97,14 +106,14 @@ html body .header-menuitems .cafe-menu-items ul li a {
   align-items: center;
   color: white;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid lightgrey;
   border-radius: 30px;
   padding: 8px;
   width: 105px;
   height: 40px;
 }
 html body .header-menuitems .cafe-menu-items ul li a:hover {
-  background-color: black;
+  background-color: #355E3B;
   color: white;
 }
 html body .header-menuitems .items-details .coffee-items {
@@ -118,6 +127,7 @@ html body .header-menuitems form input {
   height: 40px;
   border-radius: 15px;
   direction: rtl;
+  border: none;
 }
 html body .header-menuitems .cafe-menu-items {
   direction: rtl;
@@ -132,11 +142,41 @@ html body .header-menuitems .cafe-menu-items ul li {
   padding: 0 2%;
   color: white;
 }
+html body .items-card {
+  direction: rtl;
+}
+html body .items-card .card {
+  border-radius: 20px;
+}
+html body .items-card .card .product-image img {
+  width: 200px;
+  height: auto;
+}
+html body .items-card .card .item-description-and-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body .items-card .card .item-description-and-image .card-body .price {
+  color: #FF7538;
+}
+html body .items-card .card .add-to-notebook-list-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+html body .items-card .card .add-to-notebook-list-button a {
+  background-color: #355E3B;
+  border: none;
+}
 html body .footer {
   width: 100%;
   background-color: white;
   position: relative;
-  bottom: 100px;
+  bottom: 150px;
   border-radius: 60px;
 }
 html body .footer .cafe-name-and-logo {
@@ -153,9 +193,17 @@ html body .footer .cafe-name-and-logo a img {
   border-radius: 100%;
 }
 html body .footer .cafe-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: unset;
   direction: rtl;
 }
 html body .footer .cafe-options a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   display: block;
   text-decoration: none;
   color: black;
@@ -166,8 +214,8 @@ html body .footer .cafe-options a .bi-arrow-left {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-right: 100%;
+  margin-right: 90%;
 }
 html body .footer .cafe-options .menu-visit-link {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px lightgray;
 }/*# sourceMappingURL=style.css.map */
