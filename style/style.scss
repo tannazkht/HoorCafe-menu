@@ -62,6 +62,10 @@ html {
         }
         .header-menuitems {
             background-color: #7BA05B;
+            // position: sticky;
+                position: fixed;
+                top: 0px;
+                z-index: 2;
             .navbar {
                 @include flex-manager(row, space-between, center);
                 span {
@@ -149,6 +153,15 @@ html {
             }
             .items-card {
                 direction: rtl;
+                position: relative;
+                top: 300px;
+                h5 {
+                    text-align: center;
+                    padding: 15px;
+                    background-color: #7BA05B;
+                    border: 1px solid #7BA05B;
+                    border-radius: 20px;;
+                }
                 .card {
                     // @include flex-manager(row, center, center);
                     border-radius: 20px;

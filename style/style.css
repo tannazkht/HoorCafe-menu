@@ -55,6 +55,9 @@ html body .nav-and-background .navbar #signup-login-icon {
 }
 html body .header-menuitems {
   background-color: #7BA05B;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
 }
 html body .header-menuitems .navbar {
   display: flex;
@@ -144,6 +147,15 @@ html body .header-menuitems .cafe-menu-items ul li {
 }
 html body .items-card {
   direction: rtl;
+  position: relative;
+  top: 300px;
+}
+html body .items-card h5 {
+  text-align: center;
+  padding: 15px;
+  background-color: #7BA05B;
+  border: 1px solid #7BA05B;
+  border-radius: 20px;
 }
 html body .items-card .card {
   border-radius: 20px;
